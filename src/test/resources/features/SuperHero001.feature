@@ -1,6 +1,5 @@
 Feature: SuperHero API
 
-
   Scenario: Get SuperHero by id between 1-731 randomly
 
     Given set a random id path parameter

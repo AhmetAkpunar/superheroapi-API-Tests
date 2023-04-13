@@ -41,14 +41,13 @@ public class Stepdefinition{
     public void getTheSuperheroWithGivenId() {
 
         //response.prettyPrint();
-
         JsonPath resPath = response.jsonPath();
 
         System.out.printf("SuperHero with the id " + id +" has the name " + resPath.get("name").toString());
         System.out.println("");
         String url = resPath.get("image").toString();
+        System.out.println("Click on the link to see image of the Superhero");
         System.out.printf(url);
-        //System.out.println(resPath.get("image").toString());
 
     }
 
